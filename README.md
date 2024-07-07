@@ -1,5 +1,24 @@
 # Readme
-Here we explain the variables and functions that we used in our program. 
+This is MaHeuProject for Qiaofeng Liu and Xiaoyu Xia.
+We define all our functions on "solve.py" and execute these function in "run_model.py".
+
+Here we explain the variables and functions that we used in our program.(in file "solve.py").
+You can run "run_model.py" and you'll see our solution of MIP model and Greedy model.
+
+```shell
+cd MaHeuProject
+python run_model.py
+```
+
+All our result get in our personal computer, our environment configuration as follow: 
+
++ CPU model: Apple M3
++ Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
++ Gurobi Optimizer version: 11.0.2 build v11.0.2rc0 (mac64[arm] - Darwin 23.5.0 23F79)
++ Python version: 3.12
+
+
+
 ## Variables
 
 ### Important variables
@@ -76,7 +95,7 @@ description: Compute the cost of vehicle *v* that arrival at *date*
 return: s(the cost of this vehicle)
 
 #### heu_sol_print
-input: varrival_date, cap_trans, V, T, vehs,trans
+input: arrival_date, cap_trans, V, T, vehs,trans
 
 description: print heuristic algorithm result
 

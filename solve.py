@@ -192,7 +192,7 @@ def solve_normal(V, vehs, T, T_vps, trans, l, P, S):
 
 
     model = Model("IP_Model")
-    model.setParam('MIPGap', 0.05)
+    model.setParam('MIPGap', 0.01)
     # Variables
     x = {}
     for v in V:
