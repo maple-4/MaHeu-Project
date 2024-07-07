@@ -192,7 +192,7 @@ def solve_normal(V, vehs, T, T_vps, trans, l, P, S):
 
 
     model = Model("IP_Model")
-    #model.setParam('MIPGap', 0.01)
+    model.setParam('MIPGap', 0.05)
     # Variables
     x = {}
     for v in V:
@@ -286,7 +286,7 @@ def greedy_algorithm(V, vehs, T, trans, transportation_combination, plants, deal
                 arrival_date[v] = tc["end_date"]
                 selected_route[v] = tc["route"]
                 st = 1
-                print(f"choose {v} to {rlist},pt={vehs.loc[v, 'produce_time']} has_due={vehs.loc[v, 'has_due']}, due_time={vehs.loc[v, 'due_time']}, at={arrival_date[v]}")
+                # print(f"choose {v} to {rlist},pt={vehs.loc[v, 'produce_time']} has_due={vehs.loc[v, 'has_due']}, due_time={vehs.loc[v, 'due_time']}, at={arrival_date[v]}")
 
     sol = 0
     for v in vehs_ndue:
